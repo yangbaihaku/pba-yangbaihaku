@@ -1,6 +1,6 @@
 
 
-# Task00: Build C++ Program with CMake
+# Task00: Build C++ Program with CMake (49236326 BAI Yang)
 
 **Deadline: Apr. 20th (Thu) at 15:00pm**
 
@@ -12,7 +12,8 @@ Follow the instruction below to build the attached C++ code. This code will disp
 
 === (paste the screenshot image here`![](image file name)` ) === 
 
-
+![preview](task00_kadai.png)
+==== submitted by BAI YANG (白 暘, student id: 49236326) ====
 
 
 ----
