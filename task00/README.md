@@ -13,7 +13,7 @@ Follow the instruction below to build the attached C++ code. This code will disp
 === (paste the screenshot image here`![](image file name)` ) === 
 
 ![preview](task00_kadai.png)
-==== submitted by BAI YANG (白 暘, student id: 49236326) ====
+==== submitted by BAI YANG (白 暘, student id: 49236326) branch task00 ====
 
 
 ----
