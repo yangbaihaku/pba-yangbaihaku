@@ -40,9 +40,9 @@ Eigen::Vector2f time_integration_implicit(const Eigen::Vector2f& p0, float dt){
   Eigen::Matrix2f A;
   Eigen::Vector2f b;
   // modify the following two lines to implement implicit time integration
-  A << 1.f, 0.f, 0.f, 1.f;
+  A << 1.f, -1.0f * dt, -1.0f * dt * (f0 + dfdr * dt), 1.f ;
   b << r0, v0;
-  return A.inverse()*b;
+  return A.inverse() * b;
 }
 
 /**
@@ -98,12 +98,15 @@ int main()
     // below: draw routine
 
     ::glLineWidth(2.f);
+
     ::glColor3d(0.0, 0.0, 1.0);
     pba::draw_circle_solid(phase_explicit.x() * std::cos(time), phase_explicit.x() * std::sin(time), 0.05f);
     draw_polyline(history_explicit);
+
     ::glColor3d(1.0, 0.0, 0.0);
     pba::draw_circle_solid(phase_implicit.x() * std::cos(time), phase_implicit.x() * std::sin(time), 0.05f);
     draw_polyline(history_implicit);
+
     ::glColor3d(0.0, 1.0, 0.0);
     pba::draw_circle_wireframe(0.f, 0.f, 0.5f);
 

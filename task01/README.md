@@ -28,7 +28,7 @@ Now you are ready to go!
 3. Take a screenshot image (looks like image at the top)
 4. Save the screenshot image overwriting `task01/problem1.png`
 
-![problem1](problem1.png)
+![problem1](problem1_re.png)
 
 This program solves the equation of motion ${d^2 r}/{d t^2} = - {1}/{r^2}$ and visualize it in the polar coordinate, simulating the motion of small objects under gravity. The points bounce at the surface $r=0.5$. The movement of ***blue object*** is integrated using the ***Forward Time Integration***. Observe the energy gain artifact. 
 
@@ -41,7 +41,7 @@ Modify the code at `line #43`  and `line #44` in [main.cpp](main.cpp) to integra
 
 Save the screenshot image overwriting `task01/problem2.png`
 
-![problem2](problem2.png)
+![problem2](problem2_re.png)
 
 
 ## After Doing the Assignment
