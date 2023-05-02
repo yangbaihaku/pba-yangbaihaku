@@ -88,7 +88,7 @@ void collision_circle_plane(
     const float rad,
     const Eigen::Vector2f &plane_org,
     const Eigen::Vector2f &plane_nrm) {
-  const float height = (pos - plane_org).dot(plane_nrm) - 0.5*rad;
+  const float height = (pos - plane_org).dot(plane_nrm) - rad;
   if (height > 0.f) { return; }
   pos -= height * 2 * plane_nrm;
   const float velo_perp = velo.dot(plane_nrm);
