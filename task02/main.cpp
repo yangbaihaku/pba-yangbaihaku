@@ -35,12 +35,19 @@ class Particle {
  */
 void collide_particle_ball(
     Particle &p,
-    float particle_mass,
+    float particle_mass ,
     Eigen::Vector2f &ball_pos,
     Eigen::Vector2f &ball_velo,
     float ball_mass,
     float ball_rad) {
   if ((p.pos - ball_pos).norm() > ball_rad) { return; }
+
+/**
+ * [plane_norm] is the normal vector of the plane that the collision occurs on
+ * (computed as the normalized vector from the ball's center to the particle's position)
+ * [plane_org] is the origin point of the plane of collision between a particle and a ball
+ * [height] is the distance between the particle's position p.pos and the point on the collision plane plane_org
+ */
   const Eigen::Vector2f plane_norm = (p.pos - ball_pos).normalized();
   const Eigen::Vector2f plane_org = ball_pos + plane_norm * ball_rad;
   float height = (p.pos - plane_org).dot(plane_norm);
@@ -56,13 +63,15 @@ void collide_particle_ball(
   //             no friction. You do not need to change the positions.
 
   // comment out the line below
-  p.velo -= 2.f * (p.velo - ball_velo).dot(plane_norm) * plane_norm;
+  //p.velo -= 2.f * (p.velo - ball_velo).dot(plane_norm) * plane_norm;
 
   // write a few lines of code to compute the velocity of ball and particle
   // please uncomment the lines below
-  // const Eigen::Vector2f impulse =
-  // p.velo +=
-  // ball_velo +=
+   const Eigen::Vector2f impulse = (1.f + 1.f) * particle_mass * ball_mass /
+                                   (particle_mass + ball_mass) *
+                                   (ball_velo - p.velo).dot(plane_norm) * plane_norm;
+   p.velo +=  impulse / particle_mass;
+   ball_velo +=  -1.f * impulse / ball_mass;
 }
 
 /**
@@ -79,7 +88,7 @@ void collision_circle_plane(
     const float rad,
     const Eigen::Vector2f &plane_org,
     const Eigen::Vector2f &plane_nrm) {
-  const float height = (pos - plane_org).dot(plane_nrm) - rad;
+  const float height = (pos - plane_org).dot(plane_nrm) - 0.5*rad;
   if (height > 0.f) { return; }
   pos -= height * 2 * plane_nrm;
   const float velo_perp = velo.dot(plane_nrm);

@@ -28,7 +28,7 @@ Now you are ready to go!
 3. Take a screenshot image (looks like image at the top)
 4. Save the screenshot image overwriting `task02/problem1.png`
 
-![problem1](problem1.png)
+![problem1](problem1_re.png)
 
 You will see many particles bump into a ball.
 
@@ -40,7 +40,7 @@ Follow the instruction at `line #49`  in [main.cpp](main.cpp) to modify the code
 
 After running the program for a while, save the screenshot image overwriting `task02/problem2.png`
 
-![problem2](problem2.png)
+![problem2](problem2_re.png)
 
 
 ## After Doing the Assignment
