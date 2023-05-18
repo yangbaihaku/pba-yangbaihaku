@@ -48,7 +48,7 @@ cmake --build .
 Then, run the code. Take a screenshot image. 
 Save the screenshot image overwriting `task04/problem1.png`
 
-![problem1](problem1.png)
+![problem1](problem1_re.png)
 
 
 This program computes distance field from random points.
@@ -58,10 +58,10 @@ The number of the particle can be set at `line #208`  in [main.cpp](main.cpp).
 Record the computation time by filling the table below.     
 
 | #points | time |
-| --- | --- |
-| 5000 | ? |
-| 10000 | ? |
-| 20000 | ? |
+| --- |  |
+| 5000 | 1005ms |
+| 10000 | 2020ms |
+| 20000 | 3971ms |
 
 
 ## Problem 2
@@ -76,10 +76,10 @@ Run the program with different numbers of the particles (5k, 10k, and 20k).
 Record the computation time by filling the table below.
 
 | #points | time |
-| --- | --- |
-| 5000 | ? |
-| 10000 | ? |
-| 20000 | ? |
+| --- |  |
+| 5000 | 79ms |
+| 10000 | 125ms |
+| 20000 | 188ms |
 
 
 ## After Doing the Assignment
