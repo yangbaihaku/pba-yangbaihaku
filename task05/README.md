@@ -26,7 +26,7 @@ Now you are ready to go!
 Run the code as it is . Then, take a screenshot image of a program window. 
 Save the screenshot image overwriting `task05/problem1.png`
 
-![problem1](problem1.png)
+![problem1](problem1_re.png)
 
 
 ## Problem 2
