@@ -39,11 +39,11 @@ Hence, the energy minimization does not lead to elastic deformation.
 Write a few lines of code around `line #31` to accelerate the search. After running the program for a while, save the screenshot image overwriting `task05/problem2.png`
 You may need to adjust the learning rate at `line #76` to reach the convergence. 
 
-![problem2](problem2.png)
+![problem2](problem2_re.png)
 
 Write down the converged minimum value of the energy by updating the text below.
 
-***minimum energy of the system = ????***
+***minimum energy of the system = -104.74***
 
 
 ## After Doing the Assignment
