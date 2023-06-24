@@ -26,7 +26,7 @@ Now you are ready to go!
 Then, run the code. Take a screenshot image. 
 Save the screenshot image overwriting `task08/problem1.png`
 
-![problem1](problem1.png)
+![problem1](problem1_re.png)
 
 
 ## Problem 2
@@ -37,11 +37,11 @@ Write a few lines of code around `line #83` and `line #147` to set constraint to
 
 Save the screenshot image overwriting `task08/problem2.png`
 
-![problem2](problem2.png)
+![problem2](problem2_re.png)
 
 Write down the elastic potential energy of spring shown in the standard output after the convergence below: 
 
-***elastic potential energy == ?????***
+***elastic potential energy == 0.416869***
 
 ## After Doing the Assignment
 
