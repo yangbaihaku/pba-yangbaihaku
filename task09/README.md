@@ -26,7 +26,7 @@ Now you are ready to go!
 Run the code. Take a screenshot image. 
 Save the screenshot image overwriting `task09/problem1.png`
 
-![problem1](problem1.png)
+![problem1](problem1_re.png)
 
 
 ## Problem 2
@@ -42,11 +42,11 @@ Write one line of code for translation and rotation respectively.
 
 Save the screenshot image overwriting `task09/problem2.png`
 
-![problem2](problem2.png)
+![problem2](problem2_re.png)
 
 Run the program for a while to let the minimization converge. Write down the converged energy shown in standard output below. 
 
-***energy: == ?????***
+***energy: == -1663.15***
 
 ## After Doing the Assignment
 
