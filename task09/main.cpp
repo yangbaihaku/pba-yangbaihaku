@@ -76,7 +76,8 @@ void step(
     // Code differentiation of energy w.r.t. translation and rotation for one line each.
     // For the differentiation w.r.t. rotation, observe how the rotation matrix will be updated at the line #83
     dEdt -= gravity;
-    dEdo += vtx2xyz_ini.row(i_vtx).cross(gravity);git
+    dEdo += vtx2xyz_ini.row(i_vtx).cross(gravity);
+
     // do not change anything else except for the lines above.
   }
   translation -= learning_rate * dEdt;
