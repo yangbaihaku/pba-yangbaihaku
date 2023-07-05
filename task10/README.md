@@ -39,7 +39,7 @@ The energy and the angular momentum should preserve for some extent.
 
 Wait until the program stops after simulating the motion until `time=200`. Save the screenshot image overwriting `task10/problem2.png`
 
-![problem2](problem2.png)
+![problem2](problem2_re.png)
 
 ## After Doing the Assignment
 
