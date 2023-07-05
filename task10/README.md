@@ -26,7 +26,7 @@ Now you are ready to go!
 Run the code. Take a screenshot image. 
 Save the screenshot image overwriting `task10/problem1.png`
 
-![problem1](problem1.png)
+![problem1](problem1_re.png)
 
 
 ## Problem 2
